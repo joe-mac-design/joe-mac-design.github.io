@@ -370,7 +370,6 @@ section .project-about-title {
     content: "";
 }
 
-
 /* Experience Styling */
 
 .experience .title::after {
@@ -379,6 +378,10 @@ section .project-about-title {
 
 .experience .experience-content {
     color: var(--main-white);
+}
+
+.experience .experience-content a {
+    color: var(--hightlight-color);
 }
 
 .experience .experience-content .timeline p {
