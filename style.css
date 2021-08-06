@@ -397,7 +397,7 @@ section .project-about-title {
 /* Nothing Here Yet Styling */
 
 .nothing-placeholder {
-    height: 91.5vh;
+    height: 100vh;
     color: var(--main-white);
     font-family: 'Poppins', sans-serif;
     background-color: var(--graybg-color);
