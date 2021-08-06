@@ -403,7 +403,6 @@ section .project-about-title {
     background-color: var(--graybg-color);
 }
 
-
 /* Experience Styling */
 
 .experience .title::after {
