@@ -179,7 +179,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "Who i am";
 }
 
-.about .about-content, .projects .projects-content, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
+.about .about-content, .projects .projects-content, .nothing-placeholder, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -236,7 +236,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 
 /* Project Section Styling */
 
-.projects, .endorsement, .project-about {
+.projects, .endorsement, .project-about, .nothing-placeholde {
     color: var(--main-white);
     background: var(--graybg-color);
 }
@@ -392,6 +392,15 @@ section .project-about-title {
 .project-about .project-about-content .bot img {
     width: 100%;
     object-fit: cover;
+}
+
+/* Nothing Here Yet Styling */
+
+.nothing-placeholder {
+    height: 91.5vh;
+    color: var(--main-white);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--graybg-color);
 }
 
 
