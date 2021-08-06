@@ -251,7 +251,8 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 }
 
 .projects .projects-content .card {
-    width: calc(33% - 20px);
+    width: calc(33% - 10px);
+    height: 300px;
     background: var(--navbar-color);
     text-align: center;
     border-radius: 6px;
@@ -309,12 +310,13 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 }
 
 .indiv-projects .indiv-projects-content .card {
-    width: calc(33% - 20px);
+    width: calc(33% - 10px);
+    height: 300px;
     background: var(--navbar-color);
     text-align: center;
     border-radius: 6px;
     padding: 45px 25px;
-    margin-top: 40px;
+    margin-top: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -369,6 +371,29 @@ section .project-about-title {
     background: var(--graybg-color);
     content: "";
 }
+
+.project-about .project-about-content .top {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.project-about .project-about-content .top h2 {
+    font-weight: 500;
+}
+
+.project-about .project-about-content .top p {
+    text-align: justify;
+}
+
+.project-about .project-about-content .bot {
+    padding: 20px 20px;
+}
+
+.project-about .project-about-content .bot img {
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /* Experience Styling */
 
