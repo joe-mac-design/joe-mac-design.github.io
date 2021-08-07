@@ -96,7 +96,7 @@ html {
 
 .home {
     display: flex;
-    background: url("images/banner-placeholder.png") no-repeat center;
+    background: var(--graybg-color);
     height: 100vh;
     color: var(--main-white);
     min-height: 500px;
