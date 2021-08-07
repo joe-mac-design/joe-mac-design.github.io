@@ -236,11 +236,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 
 /* Project Section Styling */
 
-<<<<<<< HEAD
 .projects, .endorsement, .project-about, .nothing-placeholder {
-=======
-.projects, .endorsement, .project-about, .nothing-placeholde {
->>>>>>> 475cc408b66313f678c05a8ad0caef1d09a79b0a
     color: var(--main-white);
     background: var(--graybg-color);
 }
@@ -406,24 +402,15 @@ section .project-about-title {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
 .project-about .project-about-content .bot .italic-p  {
     font-style: italic;
 }
 
-=======
->>>>>>> 475cc408b66313f678c05a8ad0caef1d09a79b0a
 /* Nothing Here Yet Styling */
 
 .nothing-placeholder {
     height: 100vh;
-<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
-=======
-    color: var(--main-white);
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--graybg-color);
->>>>>>> 475cc408b66313f678c05a8ad0caef1d09a79b0a
 }
 
 /* Experience Styling */
