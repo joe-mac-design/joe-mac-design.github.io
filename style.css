@@ -179,7 +179,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "Who i am";
 }
 
-.about .about-content, .projects .projects-content, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
+.about .about-content, .projects .projects-content, .nothing-placeholder, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -236,7 +236,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 
 /* Project Section Styling */
 
-.projects, .endorsement, .project-about {
+.projects, .endorsement, .project-about, .nothing-placeholder {
     color: var(--main-white);
     background: var(--graybg-color);
 }
@@ -301,7 +301,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 }
 
 .indiv-projects .indiv-title::before{
-    background: var(--main-white);
+    background: var(--hightlight-color);
 }
 
 .indiv-projects .indiv-title::after{
@@ -364,7 +364,7 @@ section .project-about-title {
 }
 
 .project-about .project-about-title::before{
-    background: var(--main-white);
+    background: var(--hightlight-color);
 }
 
 .project-about .project-about-title::after{
@@ -373,11 +373,10 @@ section .project-about-title {
 }
 
 .project-about .project-about-content .top {
-    width: 100%;
     padding: 20px 20px;
 }
 
-.project-about .project-about-content .top h2 {
+.project-about .project-about-content .top h2, h3 {
     font-weight: 500;
 }
 
@@ -385,7 +384,16 @@ section .project-about-title {
     text-align: justify;
 }
 
+.project-about .project-about-content .top ol {
+    margin-left: 25px;
+}
+
+.project-about .project-about-content .top ol li {
+    line-height: 25px;
+}
+
 .project-about .project-about-content .bot {
+    width: 100%;
     padding: 20px 20px;
 }
 
@@ -394,6 +402,16 @@ section .project-about-title {
     object-fit: cover;
 }
 
+.project-about .project-about-content .bot .italic-p  {
+    font-style: italic;
+}
+
+/* Nothing Here Yet Styling */
+
+.nothing-placeholder {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Experience Styling */
 
