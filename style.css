@@ -376,7 +376,7 @@ section .project-about-title {
     padding: 20px 20px;
 }
 
-.project-about .project-about-content .top h2, h3 {
+.project-about .project-about-content .top h2, h3, .iframe-container h3 {
     font-weight: 500;
 }
 
@@ -404,6 +404,15 @@ section .project-about-title {
 
 .project-about .project-about-content .bot .italic-p  {
     font-style: italic;
+}
+
+.iframe-container {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.iframe-container a {
+    color: var(--hightlight-color);
 }
 
 /* Nothing Here Yet Styling */
