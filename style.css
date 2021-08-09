@@ -250,7 +250,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "What i do ";
 }
 
-.projects .projects-content .card {
+.projects .projects-content a {
     width: calc(33% - 10px);
     height: 300px;
     background: var(--navbar-color);
@@ -261,33 +261,33 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     transition: all 0.3s ease;
 }
 
-.projects .projects-content .card:hover {
+.projects .projects-content a:hover {
     background: var(--hightlight-color);
 }
 
-.projects .projects-content .card a {
+.projects .projects-content  a {
     color: var(--main-white);
 }
 
-.projects .projects-content .card .box {
+.projects .projects-content .box {
     transition: all 0.3s ease;
 }
 
-.projects .projects-content .card:hover .box {
+.projects .projects-content a:hover .box {
     transform: scale(1.05);
 }
 
-.projects .projects-content .card i {
+.projects .projects-content a i {
     font-size: 50px;
     color: var(--hightlight-color);
     transition: color 0.3s ease;
 }
 
-.projects .projects-content .card:hover i {
+.projects .projects-content a:hover i {
     color: var(--main-white);
 }
 
-.projects .projects-content .card .text {
+.projects .projects-content a .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -309,7 +309,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "";
 }
 
-.indiv-projects .indiv-projects-content .card {
+.indiv-projects .indiv-projects-content a {
     width: calc(33% - 10px);
     height: 300px;
     background: var(--navbar-color);
@@ -321,35 +321,35 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     transition: all 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content .card:hover {
+.indiv-projects .indiv-projects-content a:hover {
     background: var(--hightlight-color);
 }
 
-.indiv-projects .indiv-projects-content .card .box {
+.indiv-projects .indiv-projects-content a .box {
     transition: all 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content .card:hover .box {
+.indiv-projects .indiv-projects-content a:hover .box {
     transform: scale(1.05);
 }
 
-.indiv-projects .indiv-projects-content .card i {
+.indiv-projects .indiv-projects-content a i {
     font-size: 50px;
     color: var(--hightlight-color);
     transition: color 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content .card:hover i {
+.indiv-projects .indiv-projects-content a:hover i {
     color: var(--main-white);
 }
 
-.indiv-projects .indiv-projects-content .card .text {
+.indiv-projects .indiv-projects-content a .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.indiv-projects .indiv-projects-content .card a {
+.indiv-projects .indiv-projects-content a {
     color: var(--main-white);
 }
 
@@ -812,11 +812,11 @@ footer span .name {
     .about .about-content .right {
         flex: 100%;
     }
-    .projects .projects-content .card {
+    .projects .projects-content a {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .indiv-projects .indiv-projects-content .card {
+    .indiv-projects .indiv-projects-content a {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -839,10 +839,10 @@ footer span .name {
     .home .home-content .text-3{
         font-size: 32px;
     }
-    .projects .projects-content .card {
+    .projects .projects-content a {
         width: 100%;
     }
-    .indiv-projects .indiv-projects-content .card {
+    .indiv-projects .indiv-projects-content a {
         width: 100%;
     }
 }
