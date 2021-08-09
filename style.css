@@ -384,7 +384,7 @@ section .project-about-title {
     text-align: justify;
 }
 
-.project-about .project-about-content .top ol {
+.project-about .project-about-content .top ol, ul {
     margin-left: 25px;
 }
 
