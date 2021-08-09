@@ -176,7 +176,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 }
 
 .about .title::after {
-    content: "Who i am";
+    content: "Who I am";
 }
 
 .about .about-content, .projects .projects-content, .nothing-placeholder, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
@@ -247,7 +247,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
 
 .projects .title::after, .endorsement .title::after {
     background: var(--graybg-color);
-    content: "What i do ";
+    content: "What I do ";
 }
 
 .projects .projects-content a {
