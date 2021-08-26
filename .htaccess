@@ -7,4 +7,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
-RewriteRule ^Uni-Projects/(.*)$ /$1 [L,NC,R]
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule ^Uni-Projects(/.*|)$ $1 [L,NC]
+</IfModule>
+
