@@ -1,8 +1,4 @@
-ErrorDocument 404 "<H1>Page Not Found</H1>"
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
-
-RewriteRule ^uni-projects Uni-Projects/Uni-Projects.html [NC, L]
