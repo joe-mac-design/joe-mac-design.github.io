@@ -35,5 +35,3 @@ $(document).ready(function(){
         }
     });
 });
-
-document.location.href = String( document.location.href ).replace( /#/, "" );
