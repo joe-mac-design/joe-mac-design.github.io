@@ -397,6 +397,14 @@ section .project-about-title {
     padding: 20px 20px;
 }
 
+.project-about .project-about-content .bot a {
+    color: var(--hightlight-color);
+}
+
+.project-about .project-about-content .bot a:hover {
+    text-decoration: underline;
+}
+
 .project-about .project-about-content .bot img {
     width: 100%;
     object-fit: cover;
@@ -406,6 +414,7 @@ section .project-about-title {
     font-style: italic;
 }
 
+
 .iframe-container {
     width: 100%;
     padding: 20px 20px;
@@ -413,6 +422,10 @@ section .project-about-title {
 
 .iframe-container a {
     color: var(--hightlight-color);
+}
+
+.iframe-container a:hover {
+    text-decoration: underline;
 }
 
 /* Nothing Here Yet Styling */
