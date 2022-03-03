@@ -733,6 +733,10 @@ section .project-about-title {
     font-weight: 500;
 }
 
+.socials .title::after {
+    content: "Follow me Here";
+}
+
 .socials {
     padding: 100px 0;
 }
