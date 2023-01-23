@@ -116,18 +116,43 @@ html {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    animation: reveal-text-2 1s ease-in-out;
+    opacity: 100;
 }
+
+@keyframes reveal-text-2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    animation: reveal-text-3 1s ease-in-out;
 }
+
+@keyframes reveal-text-3 {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 .home .home-content .text-3 span {
     color: var(--hightlight-color);
     font-weight: 500;
+    opacity: 100;
 }
-
 
 /* Section Styling */
 
