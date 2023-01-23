@@ -18,6 +18,11 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Copyright Year
+    const copyrightYear = document.querySelector("#copyright-year");
+    const currentYear = new Date().getFullYear();
+    copyrightYear.textContent = currentYear;
+
     // Owl Carousel Script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -40,24 +45,3 @@ $(document).ready(function(){
         }
     });
 });
-
-// Get all of the navigation links
-const links = document.querySelectorAll('nav a');
-
-// Iterate through each link
-for (let link of links) {
-  // Add a click event listener to each link
-  link.addEventListener('click', function(event) {
-    // Prevent the default behavior of the link (i.e. jumping to the fragment)
-    event.preventDefault();
-    
-    // Get the target element that the link points to
-    const target = document.querySelector(this.getAttribute('href'));
-    
-    // Use the scrollTo() method to smoothly scroll to the target element
-    window.scrollTo({
-      top: target.offsetTop,
-      behavior: 'smooth'
-    });
-  });
-}
