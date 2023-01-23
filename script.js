@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    // Check scroll position on page load
+    if(window.scrollY > 20) {
+        $('.navbar').addClass("sticky");
+    }
+
     $(window).scroll(function(){
         if(this.scrollY > 20) {
             $('.navbar').addClass("sticky");
