@@ -18,6 +18,18 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        })
+    })
+
+    const hiddenElements = document.querySelectorAll('.hidden')
+    hiddenElements.forEach((el) => observer.observe(el));
+
     // Copyright Year
     const copyrightYear = document.querySelector("#copyright-year");
     const currentYear = new Date().getFullYear();
