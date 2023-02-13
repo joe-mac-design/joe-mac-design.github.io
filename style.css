@@ -19,9 +19,27 @@ html {
 }
 
 .max-width {
-    max-width: 1300px;
+    max-width: 1500px;
     padding: 0 80px;
     margin: auto;
+}
+
+.returnbtn {
+    display: inline-block;
+    background: var(--hightlight-color);
+    color: var(--main-white);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--hightlight-color);
+    transition: all 0.3s ease;
+}
+
+.returnbtn:hover {
+    color: var(--hightlight-color);
+    background: none;
 }
 
 /* Hidden Transitions */
@@ -37,16 +55,6 @@ html {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-}
-
-#timeline1 {
-    transition-delay: 200ms;
-}
-#timeline2 {
-    transition-delay: 400ms;
-}
-#timeline3 {
-    transition-delay: 600ms;
 }
 
 .row:nth-child(1) {
@@ -215,7 +223,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "Who I am";
 }
 
-.about .about-content, .projects .projects-content, .nothing-placeholder, .indiv-projects .indiv-projects-content, .project-about .project-about-content, .contact .contact-content {
+.about .about-content, .projects .projects-content, .nothing-placeholder, .indiv-projects, .indiv-projects-content, .indiv-projects-content-top, .indiv-projects-content-bot, .project-about .project-about-content, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -230,7 +238,7 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .about .about-content .right {
@@ -251,8 +259,8 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     text-align: justify;
 }
 
-.about .about-content .right a {
-    display: inline-block;
+#cvbtn {
+    display: inline-block; 
     background: var(--hightlight-color);
     color: var(--main-white);
     font-size: 20px;
@@ -264,10 +272,28 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+#cvbtn:hover {
     color: var(--hightlight-color);
     background: none;
+}
 
+#cvbtnnhy {
+    display: inline-block; 
+    background: var(--hightlight-color);
+    color: var(--main-white);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 55px;
+    border-radius: 6px;
+    border: 2px solid var(--hightlight-color);
+    transition: all 0.3s ease;
+}
+
+#cvbtnnhy:hover {
+    color: var(--hightlight-color);
+    background: none;
 }
 
 /* Project Section Styling */
@@ -345,7 +371,39 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     content: "";
 }
 
-.indiv-projects .indiv-projects-content a {
+.image-box {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 10px);
+    height: 300px;
+    background: var(--navbar-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 45px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} 
+
+.box-left {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.box-right {
+    width: 60%;
+}
+
+.box-right img {
+    width: 100%;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: var(--main-white);
+}
+
+.small-box {
     width: calc(33% - 10px);
     height: 300px;
     background: var(--navbar-color);
@@ -357,35 +415,35 @@ section .title::after, .indiv-title::after, .project-about-title::after {
     transition: all 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content a:hover {
+.indiv-projects a:hover {
     background: var(--hightlight-color);
 }
 
-.indiv-projects .indiv-projects-content a .box {
+.indiv-projects a {
     transition: all 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content a:hover .box {
+.indiv-projects a:hover {
     transform: scale(1.05);
 }
 
-.indiv-projects .indiv-projects-content a i {
+.indiv-projects a i {
     font-size: 50px;
     color: var(--hightlight-color);
     transition: color 0.3s ease;
 }
 
-.indiv-projects .indiv-projects-content a:hover i {
+.indiv-projects a:hover i {
     color: var(--main-white);
 }
 
-.indiv-projects .indiv-projects-content a .text {
+.indiv-projects a .text {
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 10px 0 10px 0;
 }
 
-.indiv-projects .indiv-projects-content a {
+.indiv-projects a {
     color: var(--main-white);
 }
 
@@ -591,7 +649,7 @@ section .project-about-title {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 6px;
     border: 5px solid;
     color: var(--hightlight-color);
     transition: all 0.3s ease;
@@ -785,6 +843,14 @@ footer span .name {
     .home .max-width {
         margin-left: 0px;
     }
+    .projects .projects-content a {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .indiv-projects a {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 1072px) {
@@ -855,11 +921,9 @@ footer span .name {
         flex: 100%;
     }
     .projects .projects-content a {
-        width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .indiv-projects .indiv-projects-content a {
-        width: calc(50% - 10px);
+    .indiv-projects a {
         margin-bottom: 20px;
     }
     .contact .contact-content .column {
@@ -884,7 +948,7 @@ footer span .name {
     .projects .projects-content a {
         width: 100%;
     }
-    .indiv-projects .indiv-projects-content a {
+    .indiv-projects a {
         width: 100%;
     }
 }

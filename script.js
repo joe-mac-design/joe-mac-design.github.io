@@ -35,6 +35,15 @@ $(document).ready(function(){
     const currentYear = new Date().getFullYear();
     copyrightYear.textContent = currentYear;
 
+    // Navbar Logo
+    $(document).ready(function() {
+        $('.logo a').html("Joseph <span>Mackle</span>");
+      });
+
+    // Title 
+    var currentTitle = document.title;
+    document.title = " Joseph Mackle | " + currentTitle;
+
     // Owl Carousel Script
     $('.carousel').owlCarousel({
         margin: 20,
