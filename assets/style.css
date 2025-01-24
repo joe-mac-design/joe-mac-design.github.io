@@ -884,7 +884,7 @@ img {
     }
 
     .projects__role__title {
-        font-size: calc(var(--h3-font-size) * 0.7);
+        font-size: calc(var(--h3-font-size) * 0.6);
     }
 
     .projects__role__date {
