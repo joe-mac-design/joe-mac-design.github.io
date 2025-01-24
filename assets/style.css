@@ -883,8 +883,13 @@ img {
         justify-content: center;
     }
 
+    .projects__card {
+        width: 400px;
+        margin-inline: auto;
+    }
+
     .projects__role__title {
-        font-size: calc(var(--h3-font-size) * 0.6);
+        font-size: calc(var(--h3-font-size) * 0.7);
     }
 
     .projects__role__date {
@@ -893,7 +898,7 @@ img {
 }
 
 /* @media screen and (max-width: 768px){
-    
+   
 } */
 
 /* Large Devices */
