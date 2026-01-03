@@ -715,6 +715,12 @@ img {
     margin-bottom: 0.75rem;
 }
 
+#GTA_Title {
+    background: linear-gradient(180deg, rgba(255, 210, 123, 0.60), rgba(223, 58, 146, 0.50), rgba(94, 22, 100, 0.40));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .projects__role {
     display: flex;
     align-items: center; /* Align vertically in the middle */
